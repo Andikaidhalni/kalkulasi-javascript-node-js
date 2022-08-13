@@ -1,0 +1,20 @@
+{
+  "name": "challenge-01",
+  "version": "1.0.0",
+  "description": "1. Clone repository\r 2. Buat branch dengan nama kalian\r 3. Kerjakan soal pada index.js\r 4. Add dan commit dengan nama kalian\r 5. Push ke branch nama kalian, jangan ke master",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BE-JS-2/challenge-01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BE-JS-2/challenge-01/issues"
+  },
+  "homepage": "https://github.com/BE-JS-2/challenge-01#readme"
+}

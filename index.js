@@ -4,11 +4,11 @@ const readline = require('readline');
   output: process.stdout
 });
 
-console.log('1. Kalkulasi')
-console.log('2. Akar Kuadrat')
-console.log('3. Luas Persegi')
-console.log('4. Volume Kubus')
-console.log('5. Volume Tabung')
+console.log('1. Kalkulator')
+console.log('2. Menghitung Akar Kuadrat')
+console.log('3. Menghitung Luas Persegi')
+console.log('4. Menghitung Volume Kubus')
+console.log('5. Menghitung Volume Tabung')
 rl.question('Pilih : ', Option => {
   if (Option == 1){
     kalkulasi()
@@ -36,28 +36,28 @@ console.log("1. Tambah(+)")
 console.log("2. Kurang(-)")
 console.log("3. Kali(*)")
 console.log("4. Bagi(/)")
-rl.question("Pilihan Anda : " ,function(pilihan){
+rl.question("Pilihannya adalah : " ,function(pilihan){
   rl.question("Masukan Bilangan Pertama : " ,function(jawabanpertama){
     rl.question("Masukan Bilangan Kedua : " ,function(jawabankedua){
     
       if (pilihan==1){
        hasil =+jawabanpertama + +jawabankedua
-       console.log('Hasil : ' +hasil);
+       console.log('Hasilnya : ' +hasil);
        rl.close();
       }
       else if (pilihan==2){
        hasil =+jawabanpertama - +jawabankedua
-       console.log('Hasil : ' +hasil);
+       console.log('Hasilnya : ' +hasil);
        rl.close();
       }
       else if (pilihan==3){
         hasil =+jawabanpertama * +jawabankedua
-        console.log('Hasil : ' +hasil);
+        console.log('Hasilnya : ' +hasil);
         rl.close();
        }
       else if (pilihan==4){
        hasil =+jawabanpertama / +jawabankedua
-       console.log('Hasil : ' +hasil);
+       console.log('Hasilnya : ' +hasil);
        rl.close();
       }
     })
@@ -68,7 +68,7 @@ rl.question("Pilihan Anda : " ,function(pilihan){
 function akarkuadrat(){
   rl.question('Masukan angka : ', jawabanpertama => {
     let akar = Math.sqrt(jawabanpertama)
-    console.log(`Hasil akar dari ${jawabanpertama} adalah ${akar}`)
+    console.log(`Hasil Per akaran dari ${jawabanpertama} adalah ${akar}`)
     rl.close();
   });
 }
@@ -87,7 +87,7 @@ function volumekubus(){
   rl.question('Sisi Pertama : ', jawabanpertama => {
     rl.question('Sisi Kedua : ', jawabankedua => {
       rl.question('Sisi Ketiga : ', jawabanketiga => {
-      console.log('Hasil Volume Tabung adalah :  '+ (jawabanpertama*jawabankedua*jawabanketiga) + ' cm³')
+      console.log('Hasil dari menghitung Volume Tabung adalah :  '+ (jawabanpertama*jawabankedua*jawabanketiga) + ' cm³')
       rl.close();
       })
     });
@@ -98,7 +98,7 @@ function volumetabung(){
   console.log('Volume Tabung Adalah phi*Jari-jari*Jari-jari*Tinggi');
     rl.question('Jari-jari : ', jawabanpertama => {
       rl.question('Tinggi : ',  jawabankedua=> {
-      console.log('Hasil Volume Tabung adalah :  '+ (Math.PI * +jawabanpertama * +jawabanpertama * +jawabankedua) + ' cm³')
+      console.log('Hasil dari Menghitung Volume Tabung adalah :  '+ (Math.PI * +jawabanpertama * +jawabanpertama * +jawabankedua) + ' cm³')
       rl.close();
       })
   });
